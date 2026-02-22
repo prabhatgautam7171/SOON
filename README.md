@@ -23,7 +23,7 @@
 
   <div style="max-width: 1000px; margin: auto; padding: 40px 20px;">
 
-  <img src="https://github.com/user-attachments/assets/524ee5ec-651e-436f-902a-d4009f7b8373" alt="Meetflex Banner" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+  <img src="https://github.com/user-attachments/assets/d8acdfee-b50e-4f68-a828-3f07e7247ef7" alt="Meetflex Banner" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
 
   <hr style="margin: 50px 0;" />
 
@@ -50,6 +50,7 @@
       <li>🎥 Real-time Video Conferencing (WebRTC)</li>
       <li>💬 Room-based Live Chat (WebSocket)</li>
       <li>📂 Secure File Upload & Sharing (Multer)</li>
+      <li>📂 Individual user chat / File Upload & Sharing (Multer)</li>
       <li>🖥 Live Screen Sharing</li>
       <li>🎨 Collaborative Drawing Canvas</li>
       <li>🔐 JWT-based Authentication</li>
@@ -100,19 +101,24 @@
 
   <h3>🏠 Meetings scheduling Page</h3>
     <img src="https://github.com/user-attachments/assets/2ebbbfc2-3802-40a7-9744-efd69f2e3d96" style="width: 100%; border-radius: 10px; margin-bottom: 30px;" />
-         
+ </br>   
   <h3>🏠 Meeting Entrance Page</h3>
     <img src="https://github.com/user-attachments/assets/07e8c8bb-2cf5-4dcf-a271-82bf56f719a3" style="width: 100%; border-radius: 10px; margin-bottom: 30px;" />
-
+ </br>
   <h3>🎥 Video Meeting</h3>
     <img src="https://github.com/user-attachments/assets/0d3becb5-21d9-47c1-a40c-07e9725d83c7" style="width: 100%; border-radius: 10px; margin-bottom: 30px;" />
-
+ </br>
   <h3>💬 Chat Component</h3>
     <img src="https://github.com/user-attachments/assets/fd73e28c-0923-4fab-8b2a-9bd7313d6b04" style="width: 100%; border-radius: 10px; margin-bottom: 30px;" />
-
+ </br>
+  <h3>📂 Individual user chat / File Upload & Sharing</h3>
+ <img src="https://github.com/user-attachments/assets/b5fcdb09-7352-4a51-bf75-451b560088d0" style="width: 100%; border-radius: 10px; margin-bottom: 30px;" />
+ <img src="https://github.com/user-attachments/assets/b4d5583e-fe0f-4da0-b5ad-55f321f4ad1c" style="width: 100%; border-radius: 10px; margin-bottom: 30px;" />
+ </br>
    <h3>🎨 Drawing Canvas</h3>
     <img src="https://github.com/user-attachments/assets/27211765-b081-4b82-8fc3-75ce43504862" style="width: 100%; border-radius: 10px;" />
 
+ </br>
    <hr style="margin: 50px 0;" />
 
    
