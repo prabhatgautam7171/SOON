@@ -179,7 +179,7 @@ const Participant = ({ videos, socket, username, toogleusers, messages }) => {
 
   return (
     <>
-      <div className="fixed right-0 top-0 bottom-0 h-screen w-[40vw] z-10 bg-gray-900 text-gray-100 overflow-y-auto">
+      <div className="fixed right-0 top-0 bottom-0 h-screen w-full sm:w-[40vw] z-10 bg-gray-900 text-gray-100 overflow-y-auto">
         <div className="h-full flex flex-col">
           <div className="bg-gray-800 rounded-none shadow-2xl overflow-hidden flex-1 flex flex-col">
             <div className="p-6 border-b border-gray-700">
@@ -289,7 +289,7 @@ const Participant = ({ videos, socket, username, toogleusers, messages }) => {
       </div>
       {showChat === true && (
         <div className="fixed right-0 bottom-0 top-0 overflow-hidden  shadow-xl w-full  sm:w-[40vw] z-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900    text-black h-screen ">
-          <div className="w-full h-[16vh] bg-gray-900/80 border-b overflow-y-hidden border-gray-800 shadow-sm px-6 py-4">
+          <div className="w-full  md:h-[16vh] bg-gray-900/80 border-b overflow-y-hidden border-gray-800 shadow-sm px-6 py-4">
             <div className=" flex items-center justify-between ">
               <div>
                 <h1 className="text-2xl font-bold text-white">

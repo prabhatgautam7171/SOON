@@ -114,7 +114,7 @@ const Chat = ({ messages, socket, username, tooglechat }) => {
 
   return (
     <div className="fixed right-0 bottom-0 top-0  shadow-xl w-full  sm:w-[40vw] z-10 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900    text-black h-screen ">
-      <div className="w-full h-[16vh] bg-gray-900/80 border-b overflow-y-hidden border-gray-800 shadow-sm px-6 py-4">
+      <div className="w-full md:h-[16vh] bg-gray-900/80 border-b overflow-y-hidden border-gray-800 shadow-sm px-6 py-4">
         <div className=" flex items-center justify-between ">
           <div>
             <h1 className="text-2xl font-bold text-white">Messages</h1>

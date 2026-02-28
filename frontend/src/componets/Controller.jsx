@@ -64,7 +64,7 @@ const Controller = ({
       <div className="border h-10 border-white/30 my-2 mx-1  border-l-0"></div>
       <button
         onClick={toogleusers}
-        className="h-[3.5rem] w-[3.5rem] hidden sm:inline  text-xl rounded-full text-white bg-gray-100/10 hover:bg-gray-500"
+        className="h-[3.5rem] w-[3.5rem]  text-xl rounded-full text-white bg-gray-100/10 hover:bg-gray-500"
       >
         <FontAwesomeIcon icon={faUsers} />
       </button>
