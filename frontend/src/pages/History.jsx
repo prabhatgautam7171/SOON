@@ -21,6 +21,9 @@ export default function History() {
   };
 
   useEffect(() => {
+    if (!localStorage.getItem("token")) {
+      navigate("/login");
+    }
     featchData();
   }, []);
 

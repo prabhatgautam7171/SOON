@@ -53,12 +53,13 @@ const Sidebar = ({ handleClick }) => {
         >
           History
         </Link>
-        <button
+        <Link
+          to={"/about"}
           id="btn"
           className="flex focus:ring-4 focus:outline-none hover:shadow-lg hover:shadow-purple-800/80 rounded-lg px-2 py-1 hover:focus:ring-purple-800 hover:bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 justify-start items-center "
         >
           About
-        </button>
+        </Link>
         {login === false ? (
           <>
             <Link
@@ -79,7 +80,7 @@ const Sidebar = ({ handleClick }) => {
         ) : (
           <button
             id="btn"
-             onClick={() => {
+            onClick={() => {
               localStorage.removeItem("token");
               setLogin(false);
             }}

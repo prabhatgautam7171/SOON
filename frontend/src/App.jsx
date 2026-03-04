@@ -8,12 +8,14 @@ import History from "./pages/History";
 import { Signup } from "./pages/Signup";
 import { Login } from "./pages/Login";
 import { NotFound } from "./pages/NotFound";
+import About from "./pages/About";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
         <Route path="/meet" element={<Home />} />
         <Route path="/meet/:id" element={<VideoMeet />} />
         <Route path="/signup" element={<Signup />} />
