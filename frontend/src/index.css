@@ -19,3 +19,87 @@
 button {
   cursor: pointer;
 }
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.3s ease-out forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.3s ease-out forwards;
+}
+
+/* Mobile-first grid improvements */
+@media (max-width: 480px) {
+  .mobile-grid-compact {
+    gap: 0.25rem;
+    padding: 0.125rem;
+  }
+
+  /* Smaller video tiles on very small screens */
+  .video-tile-small {
+    min-height: 80px !important;
+    border-radius: 0.5rem !important;
+  }
+
+  /* Hide non-essential info on very small screens */
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Landscape mode optimization */
+@media (max-height: 600px) and (orientation: landscape) {
+  .landscape-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0.25rem !important;
+  }
+
+  .video-tile-landscape {
+    min-height: 60px !important;
+  }
+
+  .local-video-landscape {
+    width: 80px !important;
+    height: 60px !important;
+    bottom: 60px !important;
+    right: 10px !important;
+  }
+}
+
+/* Touch feedback */
+.tap-highlight {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth grid transitions */
+.grid-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Prevent text selection on mobile */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}

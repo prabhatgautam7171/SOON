@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import { getMeeting } from "../../redux/actions/meetingActions.js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import logo from "../assets/logo.png";
+import logo from "/logo3.png";
 
 const Meet = ({ handleSubmit, setUsername, username, localVideoRef }) => {
   const meetingState = useSelector((state) => state.meeting);
@@ -61,7 +61,7 @@ const Meet = ({ handleSubmit, setUsername, username, localVideoRef }) => {
       <div className="min-h-screen flex justify-center  items-center bg-black">
         <div className="flex justify-center items-center">
           <h1 className="text-3xl flex gap-2  font-extrabold bg-gradient-to-r from-white via-blue-500 to-white bg-[length:200%] animate-[shimmer_2s_linear_infinite] bg-clip-text text-transparent">
-            <img src={logo} className="h-8" alt="logo" /> Meetflex.
+             S⚆⚆N...
           </h1>
         </div>
       </div>
@@ -72,11 +72,11 @@ const Meet = ({ handleSubmit, setUsername, username, localVideoRef }) => {
     <div className="h-screen w-screen bg-black text-white overflow-hidden">
       <div className="w-screen py-8 px-10 sm:px-20 flex justify-between h-[12vh] sm:h-[20vh]">
         <div className="flex justify-center items-center">
-          <img src={logo} className="h-8 " alt="logo" />
+
           <span className="text-white font-extrabold text-3xl ml-2">
-            Meetflex
+          S⚆⚆N
           </span>
-          <span className="text-blue-600 font-extrabold text-3xl">.</span>
+
         </div>
         <button
           onClick={() => {
@@ -126,7 +126,7 @@ const Meet = ({ handleSubmit, setUsername, username, localVideoRef }) => {
           <div className="w-full el">
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-700 text-white py-3 px-6 rounded-xl font-medium hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 transition-all duration-200 flex items-center justify-center space-x-2 group"
+              className="w-full bg-blue-600 text-white py-3 px-6 rounded-4xl font-medium hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 transition-all duration-200 flex items-center justify-center space-x-2 group"
             >
               <span>Join Meeting</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -137,7 +137,7 @@ const Meet = ({ handleSubmit, setUsername, username, localVideoRef }) => {
           <br />
           <div className="flex el justify-center items-center gap-20  text-sm">
             <p>
-              MeetFlex is a modern, fast, and secure video conferencing platform
+              S⚆⚆N is a modern, fast, and secure video conferencing platform
               designed to make virtual meetings seamless and engaging
             </p>
           </div>

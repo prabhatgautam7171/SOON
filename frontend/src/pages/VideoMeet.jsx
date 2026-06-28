@@ -318,38 +318,38 @@ const VideoMeet = () => {
 
     stream.getTracks().forEach(
       (track) =>
-        (track.onended = () => {
-          setVideo(false);
-          setAudio(false);
+      (track.onended = () => {
+        setVideo(false);
+        setAudio(false);
 
-          try {
-            let tracks = localVideoRef.current.srcObject.getTracks();
-            tracks.forEach((track) => track.stop());
-          } catch (e) {
-            console.log(e);
-          }
+        try {
+          let tracks = localVideoRef.current.srcObject.getTracks();
+          tracks.forEach((track) => track.stop());
+        } catch (e) {
+          console.log(e);
+        }
 
-          let blackSilence = (...args) =>
-            new MediaStream([black(...args), silence()]);
-          window.localStream = blackSilence();
-          localVideoRef.current.srcObject = window.localStream;
+        let blackSilence = (...args) =>
+          new MediaStream([black(...args), silence()]);
+        window.localStream = blackSilence();
+        localVideoRef.current.srcObject = window.localStream;
 
-          for (let id in connections) {
-            connections[id].addStream(window.localStream);
-            connections[id].createOffer().then((description) => {
-              connections[id]
-                .setLocalDescription(description)
-                .then(() => {
-                  socketRef.current.emit(
-                    "signal",
-                    id,
-                    JSON.stringify({ sdp: connections[id].localDescription }),
-                  );
-                })
-                .catch((e) => console.log(e));
-            });
-          }
-        }),
+        for (let id in connections) {
+          connections[id].addStream(window.localStream);
+          connections[id].createOffer().then((description) => {
+            connections[id]
+              .setLocalDescription(description)
+              .then(() => {
+                socketRef.current.emit(
+                  "signal",
+                  id,
+                  JSON.stringify({ sdp: connections[id].localDescription }),
+                );
+              })
+              .catch((e) => console.log(e));
+          });
+        }
+      }),
     );
   };
 
@@ -378,7 +378,7 @@ const VideoMeet = () => {
       navigator.mediaDevices
         .getUserMedia({ video: video, audio: audio })
         .then(getUserMediaSuccess)
-        .then((stream) => {})
+        .then((stream) => { })
         .catch((e) => console.log(e));
     } else {
       try {
@@ -457,23 +457,23 @@ const VideoMeet = () => {
 
     stream.getTracks().forEach(
       (track) =>
-        (track.onended = () => {
-          setScreen(false);
+      (track.onended = () => {
+        setScreen(false);
 
-          try {
-            let tracks = localVideoRef.current.srcObject.getTracks();
-            tracks.forEach((track) => track.stop());
-          } catch (e) {
-            console.log(e);
-          }
+        try {
+          let tracks = localVideoRef.current.srcObject.getTracks();
+          tracks.forEach((track) => track.stop());
+        } catch (e) {
+          console.log(e);
+        }
 
-          let blackSilence = (...args) =>
-            new MediaStream([black(...args), silence()]);
-          window.localStream = blackSilence();
-          localVideoRef.current.srcObject = window.localStream;
+        let blackSilence = (...args) =>
+          new MediaStream([black(...args), silence()]);
+        window.localStream = blackSilence();
+        localVideoRef.current.srcObject = window.localStream;
 
-          getUserMedia();
-        }),
+        getUserMedia();
+      }),
     );
   };
 
@@ -483,7 +483,7 @@ const VideoMeet = () => {
         navigator.mediaDevices
           .getDisplayMedia({ video: true, audio: true })
           .then(getDisplayMediaSuccess)
-          .then((stream) => {})
+          .then((stream) => { })
           .catch((e) => console.log(e));
       }
     }
@@ -516,7 +516,7 @@ const VideoMeet = () => {
     } catch (e) {
       console.log(e);
     }
-    window.location.href = "https://meetflex.vercel.app/";
+    window.location.href = "http://localhost:5173/";
   };
 
   const handleDraw = () => {
@@ -559,12 +559,27 @@ const VideoMeet = () => {
           setUsername={setUsername}
         />
       ) : (
-        <div className="min-h-screen w-screen bg-white">
+        <div className="min-h-screen w-screen bg-[#202124] text-white relative overflow-hidden">
           <video
             ref={localVideoRef}
             autoPlay
             muted
-            className="fixed bottom-24 z-5 left-1 sm:bottom-1 h-[14rem] w-[10rem] sm:h-[12rem] sm:w-[18rem] border  border-slate-400 object-cover bg-black rounded-xl"
+            className="
+fixed
+bottom-24
+right-6
+z-30
+w-44
+h-28
+sm:w-64
+sm:h-40
+object-cover
+rounded-2xl
+border
+border-zinc-700
+shadow-2xl
+bg-black
+"
           ></video>
           <Controller
             handleaudio={handleaudio}
@@ -631,7 +646,17 @@ const VideoMeet = () => {
               </div>
             </div>
           ) : null}
-          <DisplayVideos videos={videos} />
+          <div
+            className="
+ h-full
+ grid
+ gap-3
+ p-2
+ auto-rows-fr
+ "
+          >
+            <DisplayVideos videos={videos} />
+          </div>
         </div>
       )}
     </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Plus, LogIn, Copy } from "lucide-react";
+import { Plus, LogIn, Copy, Calendar } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,6 @@ import {
 } from "../../redux/actions/meetingActions";
 import { MeetingCard } from "../componets/MeetingCard.jsx";
 import { useGSAP } from "@gsap/react";
-import logo from "../assets/logo.png";
 import gsap from "gsap";
 
 const Home = () => {
@@ -110,7 +109,7 @@ const Home = () => {
       <div className="min-h-screen flex justify-center  items-center bg-black">
         <div className="flex justify-center items-center">
           <h1 className="text-3xl flex gap-2  font-extrabold bg-gradient-to-r from-white via-blue-500 to-white bg-[length:200%] animate-[shimmer_2s_linear_infinite] bg-clip-text text-transparent">
-            <img src={logo} className="h-8" alt="logo" /> Meetflex.
+             S⚆⚆N...
           </h1>
         </div>
       </div>
@@ -121,11 +120,11 @@ const Home = () => {
     <div className=" h-screen text-white bg-black overflow-x-hidden">
       <div className=" py-8 px-10 sm:px-20 flex justify-between">
         <div className="flex justify-center items-center">
-          <img src={logo} className="h-8 " alt="logo" />
+
           <span className="text-white font-extrabold text-3xl ml-2">
-            Meetflex
+          S⚆⚆N
           </span>
-          <span className="text-blue-600 font-extrabold text-3xl">.</span>
+
         </div>
         <button
           onClick={() => {

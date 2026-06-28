@@ -21,7 +21,7 @@ export function MeetingCard({ meeting, handleDelete }) {
   };
 
   return (
-    <div className="bg-black border my-6 border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+    <div className="bg-gray-900 border my-6 rounded-lg p-6 hover:shadow-md transition-shadow">
       <div className="flex justify-between items-start mb-4">
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-white mb-1">
@@ -51,11 +51,11 @@ export function MeetingCard({ meeting, handleDelete }) {
         <button
           onClick={() =>
             window.open(
-              `https://meetflex.vercel.app/meet/${meeting.meetingCode}`,
+              `http://localhost:5173/meet/${meeting.meetingCode}`,
               "_blank",
             )
           }
-          className="text-white p-2 w-full flex justify-center items-center gap-2 bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-blue-800 shadow-lg shadow-blue-800/80  rounded-base text-base font-bold rounded-xl  text-center leading-5"
+          className="text-white p-2 w-full flex justify-center items-center gap-2 bg-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none  focus:ring-blue-800 shadow-lg shadow-blue-800/80  rounded-base text-base font-bold rounded-xl  text-center leading-5"
         >
           <Video className="w-6 h-6 " />
           <span>Join Meeting</span>

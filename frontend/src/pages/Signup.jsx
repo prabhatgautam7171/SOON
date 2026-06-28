@@ -66,8 +66,8 @@ export const Signup = () => {
     <div className="min-h-screen overflow-x-hidden bg-black flex flex-col items-center justify-center p-4">
       <div className="w-screen py-4 px-10 sm:px-14 flex justify-between">
         <div className="flex justify-center items-center">
-          <span className="text-white font-extrabold text-3xl">Meetflex</span>
-          <span className="text-blue-600 font-extrabold text-3xl">.</span>
+          <span className="text-white font-extrabold text-3xl">S⚆⚆N</span>
+          
         </div>
         <button
           onClick={() => window.history.back()}

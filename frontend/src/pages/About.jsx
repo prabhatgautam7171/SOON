@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import { Github, Linkedin } from "lucide-react";
 
 const About = () => {
   const [loading, setLoading] = useState(false);
@@ -20,7 +20,7 @@ const About = () => {
       <div className="min-h-screen flex justify-center  items-center bg-black">
         <div className="flex justify-center items-center">
           <h1 className="text-3xl flex gap-2  font-extrabold bg-gradient-to-r from-white via-blue-500 to-white bg-[length:200%] animate-[shimmer_2s_linear_infinite] bg-clip-text text-transparent">
-            <img src={logo} className="h-8" alt="logo" /> Meetflex.
+             S⚆⚆N...
           </h1>
         </div>
       </div>
@@ -31,11 +31,11 @@ const About = () => {
     <div className=" h-screen text-white bg-black overflow-x-hidden">
       <div className=" py-8 px-10 sm:px-20 flex justify-between">
         <div className="flex justify-center items-center">
-          <img src={logo} className="h-8 " alt="logo" />
+
           <span className="text-white font-extrabold text-3xl ml-2">
-            Meetflex
+          S⚆⚆N
           </span>
-          <span className="text-blue-600 font-extrabold text-3xl">.</span>
+
         </div>
         <button
           onClick={() => {
@@ -47,21 +47,29 @@ const About = () => {
         </button>
       </div>
 
-      <section class=" text-white  py-16 px-6 text-center">
+      <section className="text-white py-16 px-6 text-center rounded-2xl
+                    shadow-[0_0_120px_rgba(37,99,235,0.5)]">
         <h1 class="text-4xl md:text-5xl font-bold mb-4 overflow-hidden">
-          🚀 Meetflex
+        S⚆⚆N
         </h1>
         <p class="text-lg md:text-xl opacity-90">
           Modern Real-Time Video Meeting Platform built with MERN & WebRTC
         </p>
-        <div class="mt-10 overflow-hidden">
+        <div class="flex justify-center mt-10 gap-5 overflow-hidden">
           <a
-            href="https://github.com/Aryan11kokare/Meetflex"
+            href="https://github.com/prabhatgautam7171"
             target="_blank"
-            class="bg-white  text-blue-900 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-100 transition duration-300"
+            class="text-blue-600 rounded-lg font-semibold shadow-md  transition duration-300"
           >
-            🌐 Github Link
+            <Github/>
           </a>
+          <a
+             href="https://www.linkedin.com/in/prabhat-gautam-347001237/"
+              target="_blank"
+              class="inline-block  text-blue-600  rounded-lg font-medium  transition duration-300"
+            >
+              <Linkedin/>
+            </a>
         </div>
       </section>
 
@@ -69,7 +77,7 @@ const About = () => {
         <div class="mb-16">
           <h2 class="text-3xl font-bold mb-6">📌 Project Overview</h2>
           <p class="text-gray-400 mb-4 leading-relaxed">
-            <strong>Meetflex</strong> is a full-stack online video conferencing
+            <strong>SOON</strong> is a full-stack online video conferencing
             platform developed using the
             <strong>MERN Stack</strong> and <strong>WebRTC</strong>. It enables
             seamless real-time communication with video calls, messaging, file
@@ -172,34 +180,7 @@ const About = () => {
         </div>
       </section>
 
-      <section class="mb-20">
-        <h2 class="text-3xl font-bold text-center mb-10">🤝 Connect With Me</h2>
 
-        <div class="max-w-3xl mx-auto g-black border border-slate-200 shadow-2xl rounded-2xl p-8 flex flex-col md:flex-row items-center gap-6  transition duration-300">
-          <div class="bg-blue-600 text-white  px-4 py-2 flex justify-center items-center rounded-full text-3xl">
-            in
-          </div>
-
-          <div class="text-center md:text-left">
-            <h3 class="text-2xl font-semibold mb-2">
-              Let’s Connect on LinkedIn
-            </h3>
-            <p class="text-gray-400 mb-4">
-              Connect with me to explore collaboration opportunities, discuss
-              full-stack development, or talk about MERN & WebRTC projects like
-              Meetflex.
-            </p>
-
-            <a
-              href="https://www.linkedin.com/in/aryan-kokare"
-              target="_blank"
-              class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300"
-            >
-              🔗 Visit My LinkedIn Profile
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

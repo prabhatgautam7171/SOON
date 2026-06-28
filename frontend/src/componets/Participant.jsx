@@ -348,7 +348,7 @@ const Participant = ({ videos, socket, username, toogleusers, messages }) => {
           </div>
           {media === true ? (
             <div
-              className="fixed flex flex-col justify-center items-center gap-2 bottom-26 ml-2 sm:bottom-18 sm:right-95 h-48 rounded-md w-30 p-2 
+              className="fixed flex flex-col justify-center items-center gap-2 bottom-26 ml-2 sm:bottom-18 sm:right-95 h-48 rounded-md w-30 p-2
                     shadow-md border border-t border-gray-600 bg-gray-900/50"
             >
               <button

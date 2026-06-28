@@ -9,7 +9,7 @@ export const NotFound = () => {
       <div className="w-full max-w-2xl relative">
         <div className="text-center mb-8">
           <div className="inline-block overflow-hidden">
-            <span className="text-9xl  font-black bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-600 bg-clip-text text-transparent">
+            <span className="text-9xl  font-black bg-gradient-to-r from-red-500 via-red-500 to-red-600 bg-clip-text text-transparent">
               404
             </span>
           </div>
