@@ -51,7 +51,7 @@ export function MeetingCard({ meeting, handleDelete }) {
         <button
           onClick={() =>
             window.open(
-              `http://localhost:5173/meet/${meeting.meetingCode}`,
+              `https://soon-lake-nine.vercel.app/meet/${meeting.meetingCode}`,
               "_blank",
             )
           }
